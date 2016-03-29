@@ -9588,8 +9588,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="IC1" library="linear" deviceset="78*" device="DT" technology="05"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="MBRA140T3G"/>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="MBRA140T3G"/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1uF"/>
@@ -9619,6 +9619,17 @@ Pins 2+3 - include circuit in current measure
 Or leave unconnected for USB A/B power.</text>
 <text x="208.28" y="88.9" size="1.778" layer="97">I2C Pullups
 Do not fit if other pullups used</text>
+<text x="40.64" y="35.56" size="1.778" layer="97">Maximum input difference:
+
+PGA1: Max ±40mV
+PGA2: Max ±80mV
+PGA4: Max ±160mV
+PGA8: Max ±320mV</text>
+<text x="40.64" y="20.32" size="1.778" layer="97">0.01R, +/- 320mV =&gt; +/- 32A
+0.05R, +/-320mV =&gt; +/- 6.4A
+0.1R, +/- 320mV =&gt; +/- 3.2A
+0.2R, +/-320mV -&gt; +/- 1.6A
+</text>
 </plain>
 <instances>
 <instance part="CONN1" gate="G$1" x="43.18" y="154.94"/>
